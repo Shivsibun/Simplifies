@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img2.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess My Number !</title>
+</head>
+<body>
+    <div id="termsmodal"class="modal">
+      <div class="modal-content">
+        <h2>GAME INSTRUCTIONS</h2>
+        <p class="gamesg">1)The game involves guessing a mysterious number using the fewest possible attempts.</p>
+        <p class="gamesg">2)Choose a number from 1 to 20 and enter it in the empty field on the left.</p>
+        <p class="gamesg">3)If the guessed number is too large or too small, a message will appear instructing you to choose another number.</p>
+        <p class="gamesg">4)Upon correctly guessing the mysterious number, a winning message will appear. If the result is the best so far, it will be recorded in the "highscore" field.</p>
+        <p class="gamesg">5)To reset the attempt, press "Try again."</p>
+        <p class="gamesg">6)Have fun! 😀</p>
+        <button id="acceptBtn">Let's Play....</button>
+      </div>  
+    </div>
+  <div class="blureffect">  
+    <header>
+        <h1 id="name"></h1>
+        <h3>GUESS YOUR NUMBER</h3>
+        <p class="between">(Between 1 and 20)</p>
+        <button class="btn again">AGAIN!!!</button>
+        <div class="number">?</div>
+    </header>
+  <main>
+    <section class="left">
+        <input type="number"class="guess"/>
+        <button class="btn check">CHECK!</button>
+    </section>
+    <section class="right">
+        <p class="message">Start guessing....</p>
+        <p class="label-score">💯 Score:<span class="score">20</span></p>
+        <p class="label-highscore">😍 Highscore: <span class="highscore">0</span></p>
+    </section>
+  </main>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
